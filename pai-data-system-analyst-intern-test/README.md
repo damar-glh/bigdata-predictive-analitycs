@@ -1,4 +1,4 @@
-# Pre-Screening Test — Data & Systems Analyst Intern
+# Pre-Screening Test - Data & Systems Analyst Intern
 
 Isi folder hasil pengerjaan Pre-Screening Test posisi **Data & Systems Analyst Intern**, mencakup analisis normalisasi (1NF - 3NF) dari dataset.
 
