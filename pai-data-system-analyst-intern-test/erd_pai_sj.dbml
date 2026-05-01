@@ -1,6 +1,6 @@
 Table surat_jalan {
   SJ_id varchar(10) [pk]
-  Status varchar(20) [note: "Draft, Actual, Cancel, Replacement"]
+  Status enum
   Date date
   From varchar(10) [ref: > warehouse.From]
   Created_By varchar(50)
