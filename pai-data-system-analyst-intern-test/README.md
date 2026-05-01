@@ -16,5 +16,5 @@ Isi folder hasil pengerjaan Pre-Screening Test posisi **Data & Systems Analyst I
 
 ## Author
 
-**Damar** — damar-glh  
+**Damar** - damar-glh  
 [github.com/damar-glh](https://github.com/damar-glh)
