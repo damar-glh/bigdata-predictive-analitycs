@@ -1,16 +1,19 @@
 Table surat_jalan {
-  SJ_id varchar(10) [pk, note: "Warehouse Code"]
-  Status enum('Draft', 'Actual', 'Cancel', 'Replacement')
+  SJ_id varchar(10) [pk]
+  Status varchar(20) [note: "Draft, Actual, Cancel, Replacement"]
   Date date
   From varchar(10) [ref: > warehouse.From]
-  Split_Group_ID varchar(10)
   Created_By varchar(50)
   Remarks text
 }
 
 Table warehouse {
-  From varchar(10) [pk]
+  From varchar(10)
   Port_Code varchar(10)
+
+  indexes {
+    (From, Port_Code) [pk]
+  }
 }
 
 Table destination {
