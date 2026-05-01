@@ -1,16 +1,6 @@
-# Pre-Screening Test — Data & Systems Analyst Intern
+# Pre-Screening Test - Data & Systems Analyst Intern
 
-Isi folder hasil pengerjaan Pre-Screening Test posisi **Data & Systems Analyst Intern**, mencakup analisis normalisasi (1NF - 3NF) dari dataset.
-
-## Struktur Folder
-
-```
-pre-screening-intern/
-├── README.md                        - file ini
-├── normalize_1NF.gs                 - Google Apps Script untuk 1NF
-└── docs/
-    └── normalization_notes.md       - catatan detail proses normalisasi
-```
+Isi folder hasil pengerjaan Pre-Screening Test posisi **Data & Systems Analyst Intern**, mencakup analisis normalisasi dari dataset.
 
 ## Cara Pakai Script (`normalize_1NF.gs`)
 
@@ -26,5 +16,5 @@ pre-screening-intern/
 
 ## Author
 
-**Damar** — damar-glh  
+**Damar** - damar-glh  
 [github.com/damar-glh](https://github.com/damar-glh)
