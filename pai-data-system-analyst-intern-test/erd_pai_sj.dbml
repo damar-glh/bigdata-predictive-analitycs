@@ -1,0 +1,40 @@
+Table surat_jalan {
+  SJ_id varchar(10) [pk, note: "Warehouse Code"]
+  Status enum('Draft', 'Actual', 'Cancel', 'Replacement')
+  Date date
+  From varchar(10) [ref: > warehouse.From]
+  Split_Group_ID varchar(10)
+  Created_By varchar(50)
+  Remarks text
+}
+
+Table warehouse {
+  From varchar(10) [pk]
+  Port_Code varchar(10)
+}
+
+Table destination {
+  SJ_id varchar(10) [ref: > surat_jalan.SJ_id]
+  Dest varchar(20)
+
+  indexes {
+    (SJ_id, Dest) [pk]
+  }
+}
+
+Table product {
+  SJ_id varchar(10) [ref: > surat_jalan.SJ_id]
+  Product varchar(50)
+  Qty decimal(10,2)
+  UOM varchar(5)
+
+  indexes {
+    (SJ_id, Product) [pk]
+  }
+}
+
+Table split {
+  SJ_id varchar(10) [pk, ref: > surat_jalan.SJ_id]
+  SJ_ref varchar(10) [ref: > surat_jalan.SJ_id, note: "Merujuk pada SJ untuk Replacement/Split"]
+  Split_Group_ID varchar(10)
+}
